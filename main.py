@@ -76,7 +76,7 @@ if __name__ == "__main__":
 	ap.add_argument("--text", default=None, help="The raw text to hash.")
 	ap.add_argument("--output", default=None, help="The file to output to. If not specified, it will print to stdout instead.")
 	ap.add_argument("--readfrom", default=None, help="The file to read from. Disables raw text input.")
-	ap.add_argument("--frequency", default=.7, help="How often to sign a letter with cryllic.")
+	ap.add_argument("--frequency", default=.7, help="How often to sign a letter with cyrillic.")
 	ap.add_argument("--secret", default=None, help="Use this to encrypt a secret message")
 	ap.add_argument("--getsecret", default=False, action="store_true", help="Use this to decrypt a secret message")
 	args = ap.parse_args()
@@ -125,10 +125,10 @@ if __name__ == "__main__":
 
 """Examples
 python3 main.py --text "1234"
-	will not work, because 1234 doesn't contain any characters that look like they're from cryllic
+	will not work, because 1234 doesn't contain any characters that look like they're from cyrillic
 
 python3 main.py --text "hello world"
-	will apply some cryllic to "hello world"
+	will apply some cyrillic to "hello world"
 
 python3 main.py --readfrom testinput.txt 
 	will use the contents of testinput.txt as the input
