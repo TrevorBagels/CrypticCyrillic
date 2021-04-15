@@ -93,7 +93,7 @@ if __name__ == "__main__":
 			sys.exit()
 	
 
-	signer = Signer(frequency=args.frequency)
+	signer = Signer(frequency=float(args.frequency))
 	normal_sign = False #indicates that this was signed normally, using random to make the signature
 	if args.secret != None:
 		signed = signer.sign_secret(txt, args.secret)
