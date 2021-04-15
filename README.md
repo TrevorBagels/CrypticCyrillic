@@ -19,12 +19,16 @@ But here's where cyrillic becomes fun: if you want to embed secret messages. Thi
 python3 main.py
 ```
 ### Arguments
---text ["your text here"]: A string to use as the input
---readfrom ["filename.txt"]: Use a file instead of --text
+`--text ["your text here"]`: A string to use as the input
 
---output ["filename.txt"]: The file to output. If not supplied, the program will print to the terminal
---secret ["secret message"]: Signs a secret message
---getsecret: Gets a secret message.
+`--readfrom ["filename.txt"]`: Use a file instead of --text
+
+
+`--output ["filename.txt"]`: The file to output. If not supplied, the program will print to the terminal
+
+`--secret ["secret message"]`: Signs a secret message
+
+`--getsecret`: Gets a secret message.
 
 ## Examples
 
