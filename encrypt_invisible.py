@@ -4,6 +4,8 @@ class MessageHider:
 	def __init__(self, seed=303):
 		random.seed(seed)
 		self.letterindex = list(" abcdefghijklmnopqrstuvwxyz0123456789,.?;:\"'=+-_)(*&^%$#@!|[]}{/\\`~<>\n\t")
+		for x in self.letterindex.copy():
+			if x.upper() != x: self.letterindex.append(x.upper())
 		random.shuffle(self.letterindex)
 		self.letterindex = "".join(self.letterindex)
 		self.letterindex = "∆" + self.letterindex
